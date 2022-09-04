@@ -18,9 +18,10 @@ class CfgPatches {
         requiredAddons[] = {
             "potato_core", "ace_ui", "ace_fortify",
             "rhs_main_loadorder",
-            "CUP_Weapons_LoadOrder", "CUP_Creatures_People_LoadOrder",
+            "CUP_Weapons_LoadOrder", "CUP_Vehicles_LoadOrder", "CUP_Creatures_People_LoadOrder",
             "Chernarus", "torabora", "fallujah_hou",
-            "DSA_Spooks"
+            "DSA_Spooks", "mbg_celle2", "AMP_Breaching_Charge",
+            "jsrs_soundmod_cup_weapons", "jsrs_soundmod_cfg_cup_weapons"
         };
         author = "Potato";
         authors[] = {"PabstMirror", "AACO"};
@@ -32,11 +33,11 @@ class CfgPatches {
 
 
 // Fix CELLE font error: (reqAddon: "mbg_celle2")
-// class CfgLocationTypes {
-//     class MBG_celle2_icon_A7 {
-//         font = "PuristaMedium";
-//     };
-// };
+class CfgLocationTypes {
+    class MBG_celle2_icon_A7 {
+        font = "PuristaMedium";
+    };
+};
 
 // Undo ACE's changes to system messages text brightness
 class RscChatListDefault {
