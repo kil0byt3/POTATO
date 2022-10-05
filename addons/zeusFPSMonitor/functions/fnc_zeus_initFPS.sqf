@@ -1,0 +1,1 @@
+[] execVM "\zeusFPSMonitor\script_fps.sqf";
