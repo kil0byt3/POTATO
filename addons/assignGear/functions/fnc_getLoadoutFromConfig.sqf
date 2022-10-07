@@ -37,7 +37,8 @@ private _configLinkedItems = getArray (_path >> "linkedItems");
 private _configAttachments = getArray (_path >> "attachments");
 private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments");
 private _configHandgunAttachments = getArray (_path >> "handgunAttachments");
-
+private _configFace = getArray (_path >> "face");
+private _configVoice = getArray (_path >> "voice");
 
 // temp - add splints to medics for old missions
 if ([_unit] call ACEFUNC(common,isMedic)) then {
@@ -74,6 +75,10 @@ private _handgunWeaponArray = if (_configHandguns isEqualTo []) then { [] } else
     };
     nil
 } count _configLinkedItems; // count used here for speed, make sure nil is above this line
+
+// Process Face/Voice
+private _face = if (_configFace isEqualTo []) then { "" } else { selectRandom _configFace };
+private _voice = if (_configVoice isEqualTo []) then { "" } else { selectRandom _configVoice };
 
 TRACE_1("Adding Items Start: ",_containersArray);
 

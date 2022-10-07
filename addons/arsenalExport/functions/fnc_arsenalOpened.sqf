@@ -61,6 +61,8 @@ private _fnc_createButton = {
 ["Set Spotter", "spotter", [QGVAR(loadout_spotter), QGVAR(loadout_spotterMags), QGVAR(loadout_spotterAttachments)]] call _fnc_createButton;
 ["Set SMG", "smg", [QGVAR(loadout_smg), QGVAR(loadout_smgMags)]] call _fnc_createButton;
 ["Set Pistol", "pistol", [QGVAR(loadout_pistol), QGVAR(loadout_pistolMags), QGVAR(loadout_pistolAttachments)]] call _fnc_createButton;
+["Set Face", "face", [QGVAR(loadout_face)]] call _fnc_createButton;
+["Set Voice", "voice", [QGVAR(loadout_voice)]] call _fnc_createButton;
 
 private _rscButton = _display ctrlCreate ["RscButton", -1];
 _rscButton ctrlSetText "Export";
