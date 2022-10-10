@@ -1,1 +1,1 @@
-[] execVM "\zeusFPSMonitor\script_fps.sqf";
+[] execVM "potato\addons\zeusFPSMonitor\script_fps.sqf";
