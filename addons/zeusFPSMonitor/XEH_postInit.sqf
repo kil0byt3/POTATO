@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 hint "FPS running";
 systemChat "FPS running";
 
